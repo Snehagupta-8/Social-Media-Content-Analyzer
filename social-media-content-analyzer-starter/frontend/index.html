@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Content Analyzer</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Social Media Content Analyzer</h1>
+    <p class="muted">Upload a PDF or image. We'll extract text and suggest engagement improvements.</p>
+
+    <div id="drop" class="dropzone">
+      <p>Drag & drop your file here, or click to select</p>
+      <input id="file" type="file" accept=".pdf,image/*" hidden />
+    </div>
+
+    <button id="uploadBtn">Analyze</button>
+
+    <div id="loading" class="loading hidden">Analyzing… please wait</div>
+
+    <section id="result" class="result hidden">
+      <h2>Result</h2>
+      <div id="meta" class="meta"></div>
+      <h3>Extracted Preview</h3>
+      <pre id="preview" class="preview"></pre>
+      <h3>Suggestions</h3>
+      <ul id="suggestions"></ul>
+    </section>
+  </main>
+<!-- <script>window.BACKEND_URL="http://127.0.0.1:8083";</script> -->
+<script src="./script.js"></script>
+
+
+
+</body>
+</html>
